@@ -40,9 +40,13 @@ public class Solutions {
         }
     }
 
-    //public static boolean majority(boolean a, boolean b, boolean c) {
-
-    //}
+    public static boolean majority(boolean a, boolean b, boolean c) {
+        if((a && b) || (b && c) || (a && c)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public static double trigIdentity(double x) {
         return ((Math.sin(x)) * (Math.sin(x)) + (Math.cos(x)) * (Math.cos(x)));
@@ -50,6 +54,6 @@ public class Solutions {
 
 
     public static void main(String[] args) {
-        System.out.println(trigIdentity(2.5));
+        System.out.println(majority(false, false, true));
     }
 }
