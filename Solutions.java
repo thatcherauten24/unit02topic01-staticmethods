@@ -41,11 +41,9 @@ public class Solutions {
     }
 
     public static boolean majority(boolean a, boolean b, boolean c) {
-        if((a && b) || (b && c) || (a && c)) {
-            return true;
-        } else {
-            return false;
-        }
+        
+        return (a && b) || (b && c) || (a && c);
+       
     }
 
     public static double trigIdentity(double x) {
@@ -54,6 +52,6 @@ public class Solutions {
 
 
     public static void main(String[] args) {
-        System.out.println(majority(false, false, true));
+        System.out.println(majority(true, false, true));
     }
 }
