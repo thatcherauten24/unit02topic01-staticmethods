@@ -20,6 +20,7 @@ public class Solutions {
         }
     }
 
+    // BUG: odd(true, false, false) -> false
     public static boolean odd(boolean a, boolean b, boolean c) {
         int total = 0;
         if(a) {
